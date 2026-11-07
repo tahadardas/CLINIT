@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --brand-sidebar: #164E63;
+    --brand-primary: #0F766E;
+    --surface-canvas: #F5F8FA;
+    --surface-card: #FFFFFF;
+    --text-primary: #1E293B;
+    --border-default: #DCE5E9;
+    --selection-soft: #E7F5F3;
+  }
+
+  body {
+    font-family: 'IBM Plex Sans Arabic', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Force English numerals 0-9 as required by SRS REQ-UX-002 */
+  .tabular-nums, .num-en {
+    font-family: 'JetBrains Mono', 'IBM Plex Sans Arabic', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media print {
+  aside, nav, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "منصة العيادات الطبية — Clinic Platform",
+  "description": "منصة إدارة العيادات والمراكز الطبية وطب الأسنان — Medical Premium Clinic Platform مع مخطط الأسنان FDI، الصلاحيات الدقيقة، الفوترة والمزامنة",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
